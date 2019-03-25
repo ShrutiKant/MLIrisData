@@ -36,8 +36,8 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 #Fitting the classification model on training set
-from sklearn.linear_model import LogisticRegression
-classifier = LogisticRegression(random_state = 0)
+from sklearn.neighbors import KNeighborsClassifier
+classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
 classifier.fit(X_train, y_train)
 
 #Predicting the Test set results
