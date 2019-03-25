@@ -57,15 +57,3 @@ print("Accuracy: ", accuracy_score(y_test, y_pred))
 
 
 
-#Encoding categorical variable
-#from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-#labelencoder_y = LabelEncoder()
-#y = labelencoder_y.fit_transform(y)
-
-#onehotencoder = OneHotEncoder()
-#y = onehotencoder.fit_transform(y[:, np.newaxis]).toarray()
-#Avoiding dummy variable trap
-#y =y[:, 1:]
-    
-#A = y.flatten()
-#y = np.reshape(y, -1)
